@@ -3,7 +3,7 @@
 IP_ADDR=`ip -o -4 addr show | awk -F '[ /]+' '/global/ {print $4}' | head -1`
 REGISTRY_PORT=5000
 WEB_UI_PORT=9090
-STORAGE_DIR=`pwd`/docker-registry-store
+STORAGE_DIR=`pwd`/docker-registry-store/data
 
 docker run -d -t --restart="always" \
         -e SETTINGS_FLAVOR=local \

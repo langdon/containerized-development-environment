@@ -3,10 +3,11 @@
 IP_ADDR=`ip -o -4 addr show | awk -F '[ /]+' '/global/ {print $4}' | head -1`
 REGISTRY_PORT=5000
 WEB_UI_PORT=9090
+STORAGE_DIR=`pwd`/docker-registry-store
 
 docker run -d -t --restart="always" \
         -e SETTINGS_FLAVOR=local \
-        -e STORAGE_PATH=/home/lwhite/docker-registry-store \
+        -e STORAGE_PATH=$STORAGE_DIR \
 	-e SEARCH_BACKEND=sqlalchemy \
         -p $REGISTRY_PORT:5000 \
         registry

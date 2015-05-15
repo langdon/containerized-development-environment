@@ -23,4 +23,5 @@ sleep 5 #let the web ui come up
 
 curl -X POST http://$IP_ADDR:9090/registry/save --data "apiVersion=v1&protocol=http&host=$IP_ADDR&port=5000"
 
+echo "Please find the registry at docker://$IP_ADDR:5000 and http://$IP_ADDR:9090/"
 

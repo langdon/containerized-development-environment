@@ -2,7 +2,7 @@ Vagrant.configure(2) do |config|
 #https://github.com/LalatenduMohanty/centos7-container-app-vagrant-box
   config.vm.box = "atomicapp/dev"
   config.vm.define :local_dev_env do | host |
-    host.vm.hostname = "containerapp-drupal"
+    host.vm.hostname = "container-devenv"
     host.vm.synced_folder ".", "/vagrant", disabled: true
     #need to figure out how to do a separate disk store or, even better, a docker storage container, for, at least, docker registry backing
 #    host.vm.synced_folder ".", "/mnt/vagrant", type: "rsync",

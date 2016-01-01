@@ -1,2 +1,4 @@
 https://github.com/whitel/containerized-development-environment
+#a description of the following file
 file:///etc/redhat-release
+

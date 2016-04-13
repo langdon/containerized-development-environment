@@ -5,7 +5,6 @@ A development environment based on docker
 
 Containerized Developement Environment (CDE)
 
-mostly junk at this point
 
 ## Architecture
 As a basic tenet, a developer/user may have more than one host machine involved in their development experience. For example, a laptop, a work desktop, and home desktop. All the projects that a user manages should be available to all the hosts in the CDE. However, a user should be able to select which projects appear where. Two examples, only work projects may be available on the work computer; only active projects are available on the laptop. 
@@ -18,3 +17,6 @@ Every proejct should be able to store and recreate the context in which it was l
 
 ### Task Context 
 Each project may have one or more tasks associated with the project. The tasks should be able to store the context in which they were last operated on and open that context when launched. Similar to the [Project Context]() referenced elsewhere. Also similar to the [Mylyn](http://www.eclipse.org/mylyn/) functionality in Eclipse. 
+
+Some beggining work on this in ./launch-task
+

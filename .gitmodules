@@ -1,0 +1,3 @@
+[submodule "docker-offlineimap"]
+	path = docker-offlineimap
+	url = git@github.com:whitel/docker-offlineimap.git
